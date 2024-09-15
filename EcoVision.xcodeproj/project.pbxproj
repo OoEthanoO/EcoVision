@@ -11,13 +11,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		81583EBE2C95C87700507A4B /* Garbage App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Garbage App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81583EBE2C95C87700507A4B /* EcoVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EcoVision.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		81583EC02C95C87700507A4B /* Garbage App */ = {
+		81583EC02C95C87700507A4B /* EcoVision */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Garbage App";
+			path = "EcoVision";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -37,7 +37,7 @@
 		81583EB52C95C87700507A4B = {
 			isa = PBXGroup;
 			children = (
-				81583EC02C95C87700507A4B /* Garbage App */,
+				81583EC02C95C87700507A4B /* EcoVision */,
 				81583EBF2C95C87700507A4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,7 +45,7 @@
 		81583EBF2C95C87700507A4B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81583EBE2C95C87700507A4B /* Garbage App.app */,
+				81583EBE2C95C87700507A4B /* EcoVision.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,9 +53,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		81583EBD2C95C87700507A4B /* Garbage App */ = {
+		81583EBD2C95C87700507A4B /* EcoVision */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81583ECE2C95C87900507A4B /* Build configuration list for PBXNativeTarget "Garbage App" */;
+			buildConfigurationList = 81583ECE2C95C87900507A4B /* Build configuration list for PBXNativeTarget "EcoVision" */;
 			buildPhases = (
 				81583EBA2C95C87700507A4B /* Sources */,
 				81583EBB2C95C87700507A4B /* Frameworks */,
@@ -66,14 +66,14 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				81583EC02C95C87700507A4B /* Garbage App */,
+				81583EC02C95C87700507A4B /* EcoVision */,
 			);
-			name = "Garbage App";
+			name = "EcoVision";
 			packageProductDependencies = (
 				81583ED72C95D1FA00507A4B /* PythonKit */,
 			);
-			productName = "Garbage App";
-			productReference = 81583EBE2C95C87700507A4B /* Garbage App.app */;
+			productName = "EcoVision";
+			productReference = 81583EBE2C95C87700507A4B /* EcoVision.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -91,7 +91,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 81583EB92C95C87700507A4B /* Build configuration list for PBXProject "Garbage App" */;
+			buildConfigurationList = 81583EB92C95C87700507A4B /* Build configuration list for PBXProject "EcoVision" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -108,7 +108,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				81583EBD2C95C87700507A4B /* Garbage App */,
+				81583EBD2C95C87700507A4B /* EcoVision */,
 			);
 		};
 /* End PBXProject section */
@@ -263,12 +263,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Garbage App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EcoVision/Preview Content\"";
 				DEVELOPMENT_TEAM = J679C73527;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Garbage-App-Info.plist";
+				INFOPLIST_FILE = "EcoVision-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is required to detect objects. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -280,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanxu.Garbage-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanxu.EcoVision";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -297,12 +297,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Garbage App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EcoVision/Preview Content\"";
 				DEVELOPMENT_TEAM = J679C73527;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Garbage-App-Info.plist";
+				INFOPLIST_FILE = "EcoVision-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is required to detect objects. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanxu.Garbage-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ethanxu.EcoVision";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -326,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		81583EB92C95C87700507A4B /* Build configuration list for PBXProject "Garbage App" */ = {
+		81583EB92C95C87700507A4B /* Build configuration list for PBXProject "EcoVision" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81583ECC2C95C87900507A4B /* Debug */,
@@ -335,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81583ECE2C95C87900507A4B /* Build configuration list for PBXNativeTarget "Garbage App" */ = {
+		81583ECE2C95C87900507A4B /* Build configuration list for PBXNativeTarget "EcoVision" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				81583ECF2C95C87900507A4B /* Debug */,

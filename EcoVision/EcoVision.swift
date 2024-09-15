@@ -1,6 +1,5 @@
 //
-//  Garbage_AppApp.swift
-//  Garbage App
+//  EcoVision.swift
 //
 //  Created by Ethan Xu on 2024-09-14.
 //
@@ -9,7 +8,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct Garbage_AppApp: App {
+struct EcoVision: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
