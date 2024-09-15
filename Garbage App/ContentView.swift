@@ -90,7 +90,7 @@ struct ContentView: View {
     }
 
     private func sendFrameToServer(frame: UIImage, completion: @escaping (Result<UIImage, Error>) -> Void) {
-        guard let url = URL(string: "https://large-needles-wonder.loca.lt/detect") else {
+        guard let url = URL(string: "https://wise-frogs-think.loca.lt/detect") else {
             completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
             return
         }
