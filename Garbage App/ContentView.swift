@@ -1,5 +1,5 @@
 import SwiftUI
-import SwiftData
+import Photos
 
 struct ContentView: View {
     @State private var processedImage: UIImage?
@@ -19,20 +19,34 @@ struct ContentView: View {
                                     .tint(.green)
                                     .padding(20)
                             }
-                            Button(action: {
+                            HStack {
                                 if processedImage != nil {
-                                    processedImage = nil
-                                } else {
-                                    captureAndSendFrame()
+                                    Button(action: {
+                                        saveImageToPhotos(image: processedImage!)
+                                    }) {
+                                        Text("Save to Photos")
+                                            .padding()
+                                            .background(Color.green)
+                                            .foregroundColor(.white)
+                                            .cornerRadius(10)
+                                    }
                                 }
-                            }) {
-                                Text(processedImage != nil ? "Cancel" : "Detect Objects")
-                                    .padding()
-                                    .background(isDetecting ? Color.gray : (processedImage != nil ? Color.red : Color.green))
-                                    .foregroundColor(.white)
-                                    .cornerRadius(10)
+                                
+                                Button(action: {
+                                    if processedImage != nil {
+                                        processedImage = nil
+                                    } else {
+                                        captureAndSendFrame()
+                                    }
+                                }) {
+                                    Text(processedImage != nil ? "Cancel" : "Detect Objects")
+                                        .padding()
+                                        .background(isDetecting ? Color.gray : (processedImage != nil ? Color.red : Color.green))
+                                        .foregroundColor(.white)
+                                        .cornerRadius(10)
+                                }
+                                .disabled(isDetecting)
                             }
-                            .disabled(isDetecting)
                         }
                         .padding(),
                         alignment: .bottom
@@ -110,6 +124,16 @@ struct ContentView: View {
 
             completion(.success(image))
         }.resume()
+    }
+    
+    private func saveImageToPhotos(image: UIImage) {
+        PHPhotoLibrary.requestAuthorization { status in
+            if status == .authorized {
+                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            } else {
+                print("Error: Photo library access not authorized")
+            }
+        }
     }
 }
 

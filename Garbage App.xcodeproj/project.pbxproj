@@ -264,6 +264,7 @@
 				INFOPLIST_FILE = "Garbage-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = EcoVision;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is required to detect objects. ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The app will store processed images into their Photos library. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +300,7 @@
 				INFOPLIST_FILE = "Garbage-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = EcoVision;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is required to detect objects. ";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The app will store processed images into their Photos library. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
