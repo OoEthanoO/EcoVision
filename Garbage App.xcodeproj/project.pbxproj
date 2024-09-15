@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		81583ED82C95D1FA00507A4B /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 81583ED72C95D1FA00507A4B /* PythonKit */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		81583EBE2C95C87700507A4B /* Garbage App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Garbage App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -27,7 +23,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81583ED82C95D1FA00507A4B /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +65,6 @@
 			);
 			name = "Garbage App";
 			packageProductDependencies = (
-				81583ED72C95D1FA00507A4B /* PythonKit */,
 			);
 			productName = "Garbage App";
 			productReference = 81583EBE2C95C87700507A4B /* Garbage App.app */;
@@ -101,7 +95,6 @@
 			mainGroup = 81583EB52C95C87700507A4B;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				81583ED62C95D1FA00507A4B /* XCRemoteSwiftPackageReference "PythonKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 81583EBF2C95C87700507A4B /* Products */;
@@ -269,6 +262,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Garbage-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = EcoVision;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is required to detect objects. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -303,6 +297,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Garbage-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = EcoVision;
 				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is required to detect objects. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -345,25 +340,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		81583ED62C95D1FA00507A4B /* XCRemoteSwiftPackageReference "PythonKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pvieito/PythonKit";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		81583ED72C95D1FA00507A4B /* PythonKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 81583ED62C95D1FA00507A4B /* XCRemoteSwiftPackageReference "PythonKit" */;
-			productName = PythonKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 81583EB62C95C87700507A4B /* Project object */;
 }

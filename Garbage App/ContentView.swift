@@ -15,8 +15,9 @@ struct ContentView: View {
                         VStack {
                             if isDetecting {
                                 ProgressView()
-                                    .progressViewStyle(CircularProgressViewStyle())
-                                    .padding(.bottom, 10)
+                                    .scaleEffect(1.5)
+                                    .tint(.green)
+                                    .padding(20)
                             }
                             Button(action: {
                                 if processedImage != nil {
@@ -27,7 +28,7 @@ struct ContentView: View {
                             }) {
                                 Text(processedImage != nil ? "Cancel" : "Detect Objects")
                                     .padding()
-                                    .background(isDetecting ? Color.gray : (processedImage != nil ? Color.red : Color.blue))
+                                    .background(isDetecting ? Color.gray : (processedImage != nil ? Color.red : Color.green))
                                     .foregroundColor(.white)
                                     .cornerRadius(10)
                             }
@@ -57,7 +58,6 @@ struct ContentView: View {
         
         isDetecting = true
         
-        // Send the frame to the server
         sendFrameToServer(frame: frame) { result in
             DispatchQueue.main.async {
                 self.isDetecting = false
@@ -76,7 +76,7 @@ struct ContentView: View {
     }
 
     private func sendFrameToServer(frame: UIImage, completion: @escaping (Result<UIImage, Error>) -> Void) {
-        guard let url = URL(string: "https://chubby-sites-obey.loca.lt/detect") else {
+        guard let url = URL(string: "https://large-needles-wonder.loca.lt/detect") else {
             completion(.failure(NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])))
             return
         }
